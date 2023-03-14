@@ -1,0 +1,120 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #FFFFFF;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #0066CC, #0099FF);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    background: linear-gradient(to bottom, #0099FF, #0066CC);
+    transform: translateY(-3px);
+  }
+  
+  main {
+    background-image: url("https://cdn.proactiveinvestors.com/thumbs/upload/Article/Image/2019_01/1200z740_1548193892_shutterstock_625282904.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+  }
+  
+  
+  section {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: calc(33.33% - 40px);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+  
+  li {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  button {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  a {
+    color: #0066CC;
+  }
+  
