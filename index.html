@@ -2,61 +2,120 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/9bc787c75d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/estilos.css">
     <title>NTR Tech - Desarrollo de Aplicaciones Móviles</title>
   </head>
   <body>
+          <!-- navbar -->
     <header>
-      <h1>NTR Tech</h1>
-      <nav>
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#nuestras apps">nuestras apps</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="NTR Tech"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Cotiza.html">Cotiza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <main>
-      <div class="container">
-        <section class="box">
-          <h2>Transforma tu negocio con nuestras aplicaciones móviles</h2>
-          <p>En NTR Tech estamos comprometidos con proponer nuevos esquemas de negocio a través del uso de aplicaciones móviles. Pensamos fuera de la caja, llegamos a nuevos nichos de negocios y competimos de manera disruptiva en el mercado.</p>
-          <button>Conoce nuestros servicios</button>
-        </section>
+    <section class="jumbotron text-center">
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/ia2.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/ia1.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/oficina5.webp" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
       </div>
+      <!-- Texto -->
       <div class="container">
-        <section id="servicios" class="box">
-          <h2>Nuestros servicios</h2>
-          <ol>
-            <li>Desarrollo de aplicaciones móviles a medida</li>
-            <li>Integración de sistemas y servicios</li>
-            <li>Desarrollo de aplicaciones web y de escritorio</li>
-          </ol>
-          <p>Ofrecemos soluciones personalizadas para empresas de cualquier tamaño y sector. Contáctanos para conocer más sobre nuestros servicios.</p>
-        </section>
+        <h1 class="display-4">Transforma tu negocio con software de vanguardia</h1>
+        <p class="lead">En NTR Tech estamos comprometidos con proponer nuevos esquemas de negocio a través del uso de inteligencia artificial y software ad-hoc para empresas y personas. Optimizamos tus recursos y nos actualizamos las herramientas de tu negocio.</p>
+        <a class="btn btn-primary btn-lg" href="./Cotiza.html" role="button">Cotiza</a>
       </div>
+    </section>
+      <!-- Cards -->
+    <section id="servicios" class="section-padding">
       <div class="container">
-        <section id="nosotros" class="box">
-          <h2>Sobre nosotros</h2>
-          <p>Somos una startup fintech chilena fundada en el año 2022. Nuestro equipo está formado por expertos en desarrollo de software y finanzas, comprometidos con ofrecer soluciones innovadoras y eficientes.</p>
-          <p>En NTR Tech creemos en la colaboración y el trabajo en equipo. Siempre estamos buscando nuevas oportunidades de crecimiento y aprendizaje.</p>
-        </section>
+        <h2 class="text-center">Servicios</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Desarrollo de Aplicaciones</h5>
+                <p class="card-text">Creamos aplicaciones especialmente diseñadas para tu negocio y tus clientes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Automatización e Inteligencia Artificial</h5>
+                <p class="card-text">Contamos con experiencia en la implementación de tecnologías de Inteligencia Artificial, diseño de automatas digitales, reconocimiento facial, entre otros.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Asesoria Especializada a Gerencias</h5>
+                <p class="card-text">Ponemos a tu alcance herramientas diseñadas a medida para alcanzar tus metas especificas</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container">
-        <section id="contacto" class="box">
-          <h2>Contacto</h2>
-          <p>¡Contáctanos para saber más sobre nuestros servicios! Estamos ubicados en Santiago, Chile, pero también ofrecemos nuestros servicios en otras regiones.</p>
-          <ul>
-            <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
-            <li><strong>Correo electrónico:</strong> info@ntrtech.cl</li>
-            <li><strong>Dirección:</strong> Av. Providencia 1234, Santiago, Chile</li>
-          </ul>
-        </section>
-      </div>
-    </main>
+    </section>
     <footer>
-      <p>&copy; 2023 NTR Tech. Todos los derechos reservados.</p>
+      <div class="container">
+        <p class="text-center">&copy; NTR Tech SPA 2023 - Todos los derechos reservados</p>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
