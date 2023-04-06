@@ -1,0 +1,190 @@
+/* Variables */
+$primary-color: #000000;
+$secondary-color: #363535;
+$link-color: #000000;
+$dark-color: #333333;
+$paragraph-color: #f7f1f1;
+$heading-font-size: 2rem;
+$paragraph-font-size: 1.2rem;
+$list-item-font-size: 1.2rem;
+$subheading-font-size: 1.5rem;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$breakpoint: 767px;
+
+/* Base styles for all pages */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $paragraph-font-size;
+  line-height: 1.5;
+}
+
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  z-index: 100;
+  inline-size: 100%;
+  /* Add a transition effect to navbar */
+  transition: all 0.3s ease-in-out;
+  /* Add a drop shadow effect to navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Increase color contrast in navbar by using color for links */
+  .nav-link {
+    color: $link-color;
+    /* Add a hover effect to navbar links */
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  /* Responsive styles for navbar */
+  @media only screen and (max-inline-size: 767px) {
+    padding: 0 10px;
+  }
+  /* Add an animation effect to navbar */
+  &.slide-down {
+    transform: translateY(-100%);
+    
+    /* Add a delay to the animation */
+    animation: slide-down 0.5s ease-out 0.3s forwards;
+    
+    /* Make sure the navbar stays on top during the animation */
+    z-index: 999;
+  }
+  
+  /* Add an animation effect to navbar */
+  &.slide-up {
+    transform: translateY(-100%);
+    
+    /* Add a delay to the animation */
+    animation: slide-up 0.5s ease-out 0.3s forwards;
+    
+    /* Make sure the navbar stays on top during the animation */
+    z-index: 999;
+  }
+  
+  /* Add a top state for the navbar when scrolling */
+  &.top {
+    background: linear-gradient(to right, $secondary-color, $primary-color);
+    box-shadow: none;
+    padding: 10px 20px;
+    /* Add a transition effect to navbar */
+    transition: all 0.3s ease-in-out;
+    
+    /* Add a hover effect to navbar links */
+    .nav-link {
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+/* Keyframe animations */
+@keyframes slide-down {
+0% {
+transform:translateY(-100%);
+}
+100% {
+transform: translateY(0%);
+}
+}
+
+@keyframes slide-up {
+0% {
+transform: translateY(0%);
+}
+100% {
+transform: translateY(-100%);
+}
+}
+/* Footer */
+footer {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  color: $link-color; 
+  padding-block: 20px; 
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; 
+
+      @media (max-width: $breakpoint) {
+        flex-direction: column; 
+      }
+
+      .col-md-4 {
+        flex: 1; 
+
+        h5 {
+          margin-block-end: 10px; 
+        }
+
+        p {
+          margin-block-end: 0; 
+        }
+
+        ul {
+          list-style-type: none; 
+          padding-inline-start: 0;
+
+          li {
+            margin-block-end: 5px; 
+
+            a {
+              color: $link-color; 
+              text-decoration: none; 
+
+              &:hover {
+                color: $secondary-color; 
+                text-decoration: underline; 
+              }
+            }
+          }
+        }
+
+        .social-icons {
+          display: flex;
+          flex-direction: row;
+          gap: 10px; 
+
+          a {
+            color: $link-color;
+            text-decoration: none; 
+
+            &:hover {
+              color: $secondary-color;
+              transform: scale(1.2); 
+              transition: all 0.3s ease-in-out; 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bg-secondary {
+    background-color: $secondary-color; 
+    padding-block: 10px; 
+
+    p {
+      margin-block-start: 0; 
+      margin-block-end: 0; 
+      text-align: center; 
+    }
+  }
+}

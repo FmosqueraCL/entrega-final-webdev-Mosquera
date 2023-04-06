@@ -3,117 +3,179 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NTR Tech SPA ofrece servicios de tecnología de alta calidad, que incluyen desarrollo web y móvil, soporte técnico, análisis de datos, diseño de infraestructura y consultoría tecnológica. Nuestro equipo de expertos utiliza las últimas tecnologías y herramientas para ofrecer soluciones personalizadas que satisfacen las necesidades de nuestros clientes. Contáctanos para conocer cómo podemos ayudar a que tu negocio prospere en la era digital.">
     <script src="https://kit.fontawesome.com/9bc787c75d.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <title>NTR Tech - Desarrollo de Aplicaciones Móviles</title>
+    <link rel="stylesheet" href="./dist/main.css">
+    <title>NTR Tech - Soluciones tecnológicas y servicios informaticos IT</title>
   </head>
   <body>
-          <!-- navbar -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="NTR Tech"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#Servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Cotiza.html">Cotiza</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
-              </li>
-              </li>
+  /*
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="./media/logo.png" alt="NTR Tech"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./page/Tecnologias.html">Tecnologias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./page/Novedades.html">Novedades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./page/Nosotros.html">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./page/Cotiza.html">Cotiza</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+  </header>
+  /*
+<section class="jumbotron text-center">
+  <div class="hero-video">
+    <video autoplay loop muted>
+<source src="./media/video/video2.mp4" type="video/mp4" alt="La informatica permite traer a la realidad lo que imagines"> 
+    </video>
+  </div>
+<div class="container">
+  <div class="row align-items-center"> <!-- This will vertically align the columns -->
+    <div class="col-md-6">
+      <div class="white-box">
+        <h1 class="display-4 fw-bold">Todas tus soluciones informaticas en un solo lugar.</h1>
+        <p class="lead my-4">En NTR Tech SPA brindamos servicios de alta calidad en tecnología.</p>
+        <a class="btn btn-primary btn-lg" href="./page/Cotiza.html" role="button">Cotiza</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="white-box d-flex justify-content-center"> <!-- This will horizontally center the image -->
+        <img src="./images/AA3.png" alt="La informatica es una herramienta para optenciar y optimizar tus recursos" class="img-fluid rounded-circle">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+/*
+<section id="servicios" class="container-fluid px-0">
+  <div class="row mx-0">
+    <div class="col-lg-4 col-md-6 col-sm-12 p-5 bg-light d-flex flex-column justify-content-center align-items-center bg-servicios">
+      <i class="fas fa-laptop-code fa-5x mb-3"></i>
+      <h2 class="mb-3">Desarrollo Web</h2>
+      <p class="mb-3 text-center">Desarrollamos páginas web y aplicaciones móviles a medida, utilizando las últimas tecnologías en desarrollo web.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Diseño y desarrollo de páginas web</li>
+        <li class="list-group-item">Desarrollo de aplicaciones web a medida</li>
+        <li class="list-group-item">Integración de sistemas y servicios web</li>
+        <li class="list-group-item">Optimización y mejora de sitios web existentes</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 p-5 bg-light d-flex flex-column justify-content-center align-items-center bg-servicios">
+      <i class="fas fa-mobile-alt fa-5x mb-3"></i>
+      <h2 class="mb-3">Desarrollo Móvil</h2>
+      <p class="mb-3 text-center">Creamos aplicaciones móviles para iOS y Android que brindan una excelente experiencia de usuario.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Desarrollo de aplicaciones móviles nativas para iOS y Android</li>
+        <li class="list-group-item">Desarrollo de aplicaciones multiplataforma utilizando React Native</li>
+        <li class="list-group-item">Optimización y mejora de aplicaciones móviles existentes</li>
+        <li class="list-group-item">Integración de aplicaciones móviles con sistemas y servicios web</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 p-5 bg-light d-flex flex-column justify-content-center align-items-center bg-servicios">
+      <i class="fas fa-cog fa-5x mb-3"></i>
+      <h2 class="mb-3">Soporte Técnico</h2>
+      <p class="mb-3 text-center">Ofrecemos servicios de soporte técnico para garantizar el correcto funcionamiento de sus sistemas y aplicaciones.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Mantenimiento y actualización de sistemas y aplicaciones</li>
+        <li class="list-group-item">Solución de problemas y errores</li>
+        <li class="list-group-item">Monitoreo y optimización de sistemas y aplicaciones</li>
+        <li class="list-group-item">Implementación de medidas de seguridad y backup</li>
+      </ul>
+    </div>
+  </div>
+<div class="row mx-0">
+  <div class="col-lg-4 col-md-12 col-sm-12 p-5 bg-light d-flex flex-column justify-content-center align-items-center">
+    <i class="fas fa-chart-line fa-5x mb-3"></i>
+    <h2 class="mb-3">Análisis de Datos</h2>
+    <p class="mb-3 text-center">Ayudamos a las empresas a aprovechar al máximo sus datos mediante análisis y visualización.</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Análisis de datos y estadísticas</li>
+      <li class="list-group-item">Creación de visualizaciones y dashboards</li>
+      <li class="list-group-item">Implementación de soluciones de business intelligence</li>
+      <li class="list-group-item">Integración de datos de diferentes fuentes</li>
+    </ul>
+  </div>
+  <div class="col-lg-4 col-md-12 col-sm-12 p-5 bg-light d-flex flex-column justify-content-center align-items-center bg-servicios">
+    <i class="fas fa-server fa-5x mb-3"></i>
+    <h2 class="mb-3">Infraestructura Tecnológica</h2>
+    <p class="mb-3 text-center">Diseñamos y gestionamos la infraestructura tecnológica de su empresa, para garantizar su funcionamiento óptimo.</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Diseño y configuración de redes y servidores</li>
+      <li class="list-group-item">Mantenimiento y actualización de infraestructura tecnológica</li>
+      <li class="list-group-item">Implementación de soluciones de backup y recuperación de datos</li>
+      <li class="list-group-item">Optimización de la infraestructura para el rendimiento y la seguridad</li>
+    </ul>
+  </div>
+  <div class="col-lg-4 col-md-12 col-sm-12 p-5 bg-light d-flex flex-column justify-content-center align-items-center bg-servicios">
+    <i class="fas fa-user-tie fa-5x mb-3"></i>
+    <h2 class="mb-3">Consultoría Tecnológica</h2>
+    <p class="mb-3 text-center">Proporcionamos asesoramiento y orientación en la toma de decisiones tecnológicas.</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Análisis de necesidades y evaluación de soluciones tecnológicas</li>
+      <li class="list-group-item">Desarrollo de planes estratégicos de tecnología</li>
+      <li class="list-group-item">Implementación de soluciones de gestión de proyectos</li>
+      <li class="list-group-item">Auditoría y evaluación de seguridad informática</li>
+    </ul>
+  </div>
+</div>
+</section>
+/*
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">NTR Tech SPA</h5>
+            <p class="text-muted">Soluciones elegantes para problemas complejos</p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="./page/Tecnologias.html" class="text-white">Tecnologias</a></li>
+              <li><a href="./page/Novedades.html" class="text-white">Novedades</a></li>
+              <li><a href="./page/Nosotros.html" class="text-white">Nosotros</a></li>
+              <li><a href="./page/Cotiza.html" class="text-white">Cotiza</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Redes Sociales</h5>
+            <ul class="list-unstyled d-flex justify-content-between">
+              <li><a href="https://www.instagram.com/" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
+              <li><a href="https://twitter.com/" class="text-white"><i class="fab fa-twitter fa-lg"></i></a></li>
+              <li><a href="https://www.tiktok.com/" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a></li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <section class="jumbotron text-center">
-      <!-- Carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/ia2.jpg" class="d-block w-100" alt="Slide 1">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/ia1.jpg" class="d-block w-100" alt="Slide 2">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/oficina5.webp" class="d-block w-100" alt="Slide 3">
-          </div>
+      </div>
+      <div class="bg-secondary py-3">
+        <div class="container">
+          <p class="m-0 text-center text-white">&copy; NTR Tech SPA 2023 - Todos los derechos reservados</p>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-      <!-- Texto -->
-      <div class="container">
-        <h1 class="display-4">Transforma tu negocio con software de vanguardia</h1>
-        <p class="lead">En NTR Tech estamos comprometidos con proponer nuevos esquemas de negocio a través del uso de inteligencia artificial y software ad-hoc para empresas y personas. Optimizamos tus recursos y nos actualizamos las herramientas de tu negocio.</p>
-        <a class="btn btn-primary btn-lg" href="./Cotiza.html" role="button">Cotiza</a>
-      </div>
-    </section>
-      <!-- Cards -->
-    <section id="servicios" class="section-padding">
-      <div class="container">
-        <h2 class="text-center">Servicios</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Desarrollo de Aplicaciones</h5>
-                <p class="card-text">Creamos aplicaciones especialmente diseñadas para tu negocio y tus clientes.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Automatización e Inteligencia Artificial</h5>
-                <p class="card-text">Contamos con experiencia en la implementación de tecnologías de Inteligencia Artificial, diseño de automatas digitales, reconocimiento facial, entre otros.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Asesoria Especializada a Gerencias</h5>
-                <p class="card-text">Ponemos a tu alcance herramientas diseñadas a medida para alcanzar tus metas especificas</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <p class="text-center">&copy; NTR Tech SPA 2023 - Todos los derechos reservados</p>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

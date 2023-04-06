@@ -1,0 +1,73 @@
+.servicios {
+  .col-lg-4 {
+    .bg-servicios {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-block: 30px 0; // Shorthand property
+
+      .fa {
+        color: $primary-color;
+      }
+
+      h2 {
+        font-size: $heading-font-size;
+        margin-block: 20px 0; // Shorthand property
+        color: $primary-color;
+
+        @media (max-inline-size: $md) {
+          font-size: $subheading-font-size;
+          margin-block: 15px 0; // Shorthand property
+        }
+
+        @media (max-inline-size: $sm) {
+          font-size: $subheading-font-size;
+          margin-block: 10px 0; // Shorthand property
+        }
+      }
+
+      p {
+        font-size: $paragraph-font-size;
+        margin-block: 20px 0; // Shorthand property
+        color: $secondary-color;
+
+        @media (max-inline-size: $md) {
+          font-size: $paragraph-font-size;
+          margin-block: 15px 0; // Shorthand property
+        }
+
+        @media (max-inline-size: $sm) {
+          font-size: $paragraph-font-size;
+          margin-block: 10px 0; // Shorthand property
+        }
+      }
+
+      ul {
+        font-size: $list-item-font-size;
+
+        li {
+          color: $secondary-color;
+          padding: 5px 0;
+
+          @media (max-inline-size: $md) {
+            padding: 3px 0;
+          }
+
+          @media (max-inline-size: $sm) {
+            padding: 2px 0;
+          }
+        }
+      }
+
+      @media (max-inline-size: $md) {
+        padding: 20px;
+        margin-block: 20px 0; // Shorthand property
+      }
+
+      @media (max-inline-size: $sm) {
+        padding: 15px;
+        margin-block: 20px 0; // Shorthand property
+      }
+    }
+  }
+}
