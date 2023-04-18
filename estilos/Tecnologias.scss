@@ -4,69 +4,57 @@
       background-color: white;
       padding: 30px;
       border-radius: 10px;
-      margin-block: 30px 0; // Shorthand property
-
+      margin-block: 30px 0; 
       .fa {
         color: $primary-color;
       }
-
       h2 {
         font-size: $heading-font-size;
-        margin-block: 20px 0; // Shorthand property
+        margin-block: 20px 0; 
         color: $primary-color;
-
-        @media (max-inline-size: $md) {
+        @media (max-inline-size: $medium) {
           font-size: $subheading-font-size;
-          margin-block: 15px 0; // Shorthand property
+          margin-block: 15px 0; 
         }
-
-        @media (max-inline-size: $sm) {
+        @media (max-inline-size: $small) {
           font-size: $subheading-font-size;
-          margin-block: 10px 0; // Shorthand property
+          margin-block: 10px 0; 
         }
       }
-
       p {
         font-size: $paragraph-font-size;
-        margin-block: 20px 0; // Shorthand property
+        margin-block: 20px 0; 
         color: $secondary-color;
 
-        @media (max-inline-size: $md) {
+        @media (max-inline-size: $medium) {
           font-size: $paragraph-font-size;
-          margin-block: 15px 0; // Shorthand property
+          margin-block: 15px 0; 
         }
-
-        @media (max-inline-size: $sm) {
+        @media (max-inline-size: $small) {
           font-size: $paragraph-font-size;
-          margin-block: 10px 0; // Shorthand property
+          margin-block: 10px 0; 
         }
       }
-
       ul {
         font-size: $list-item-font-size;
-
         li {
           color: $secondary-color;
           padding: 5px 0;
-
-          @media (max-inline-size: $md) {
+          @media (max-inline-size: $medium) {
             padding: 3px 0;
           }
-
-          @media (max-inline-size: $sm) {
+          @media (max-inline-size: $small) {
             padding: 2px 0;
           }
         }
       }
-
-      @media (max-inline-size: $md) {
+      @media (max-inline-size: $medium) {
         padding: 20px;
-        margin-block: 20px 0; // Shorthand property
+        margin-block: 20px 0; 
       }
-
-      @media (max-inline-size: $sm) {
+      @media (max-inline-size: $small) {
         padding: 15px;
-        margin-block: 20px 0; // Shorthand property
+        margin-block: 20px 0; 
       }
     }
   }

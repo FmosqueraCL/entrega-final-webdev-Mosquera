@@ -1,16 +1,13 @@
-// Define the color variables
-$primary-color: #007bff;
-$secondary-color: #f8f9fa;
+$index-primary-color: #007bff;
+$index-secondary-color: #f8f9fa;
 $dark-color: #444;
 $light-color: #666;
 $gray-color: #555;
 
-// Jumbotron section
 .jumbotron {
   position: relative;
   padding: 0;
   margin-bottom: 0;
-
   .hero-video {
     position: absolute;
     top: 0;
@@ -19,157 +16,120 @@ $gray-color: #555;
     width: 100%;
     overflow: hidden;
     z-index: -1;
-
     video {
       height: 100%;
       width: 100%;
       object-fit: cover;
     }
   }
-
-.container {
-  position: relative;
-  z-index: 1;
-
-  .row {
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-
-    @media (max-width: 767px) {
-      padding: 30px;
+  .container {
+    position: relative;
+    z-index: 1;
+    margin-top: 80px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
     }
-
-    .col-md-6 {
-      @media (max-width: 767px) {
-        margin-bottom: 30px;
+      
+    }
+    .row {
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      @media (max-width: $small) { 
+        padding: 30px;
+        flex-direction: column; 
       }
-
-      h1 {
-        font-size: 2.5rem;
-        color: $dark-color;
-        overflow-wrap: break-word; // Break words only at allowed break points
-
-        @media (max-width: 767px) {
-          font-size: 2rem;
+      .col-md-6 {
+        @media (max-width: $small) {
+          margin-bottom: 30px;
+          max-width: 100%; 
+        }
+        h1 {
+          font-size: 3rem;
+          color: $dark-color;
+          word-wrap: break-word; 
+          @media (max-width: $small) {
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-size: 1.5rem;
+          color: $light-color;
+          word-wrap: break-word; 
+          @media (max-width: $small) {
+            font-size: 1.25rem;
+          }
+        }
+        img {
+          max-width: 100%;
+          height: auto; 
+          @media (max-width: $small) {
+            max-width: 50%;
+            min-width: 40vw; 
+            margin: 0 auto;
+            display: block;
+          }
         }
       }
-
-      p {
-        font-size: 1.5rem;
-        color: $light-color;
-        overflow-wrap: break-word; // Break words only at allowed break points
-
-        @media (max-width: 767px) {
-          font-size: 1.25rem;
-        }
-      }
-
-      img {
-        object-fit: cover; // Make the image fill the box while preserving its aspect ratio
-
-        @media (max-width: 767px) {
-          max-width: 50%;
-          min-width: 40vw; // Set a minimum width for the image on small screens
-          margin: 0 auto;
-          display: block;
-        }
+    .white-box {
+      background-color: $index-secondary-color;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+      @media (max-width: $small) {
+        max-width: none; 
+        margin-top: -50px; 
       }
     }
-
-.white-box {
-  background-color: $secondary-color;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-
-  @media (max-width: 767px) {
-    max-width: 150%; // Use most of the available width on small screens
-    margin: 0 auto; 
-  }
-}
-}
-}
-// Servicios section
-#servicios {
+   } 
+ } 
+servicios.scss .servicios {
   .col-lg-4 {
     .bg-servicios {
       background-color: white;
       padding: 30px;
-      border-radius: 10px;
+      @include border-radius(10px);
       margin-bottom: 30px;
-
       .fa {
-        color: $primary-color;
+        color: $dark-color;
       }
-
       h2 {
         font-size: $heading-font-size;
         margin-bottom: 20px;
-        color: $primary-color;
+        color: $dark-color; 
       }
-
       p {
         font-size: $paragraph-font-size;
         margin-bottom: 20px;
-        color: $secondary-color;
+        color: $paragraph-color;
       }
-
       ul {
         font-size: $list-item-font-size;
-
         li {
-          color: $secondary-color;
+          color: $paragraph-color; 
           padding: 5px 0;
         }
       }
-
-      // Responsive design
-      @media (max-width: $sm) {
-        padding: 20px;
+      @media (max-width: $small) {
+        padding: 15px; 
         margin-bottom: 20px;
-
         h2 {
           font-size: $subheading-font-size;
-          margin-bottom: 15px;
+          margin: rem(10px) rem(0); 
         }
-
         p {
           font-size: $paragraph-font-size;
-          margin-bottom: 15px;
+          margin: rem(10px) rem(0); 
         }
-
         ul {
           font-size: $list-item-font-size;
-
           li {
-            padding: 3px 0;
+            padding: 2px 0; 
           }
         }
-      }
-
-      @media(max-width: $sm) {
-padding: 15px;
-    h2 {
-      font-size: $subheading-font-size;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: $paragraph-font-size;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      font-size: $list-item-font-size;
-
-      li {
-        padding: 2px 0;
       }
     }
   }
 }
-}
-}
-}
+

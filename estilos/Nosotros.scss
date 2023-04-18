@@ -1,1 +1,85 @@
+// Variables
+$section-padding: 50px;
+$section-bg-color: #f0f0f0;
+$section-title-size: 36px;
+$section-desc-size: 18px;
+$member-img-size: 200px;
+$name-size: 24px;
+$title-size: 18px;
+$title-color: #777;
+$desc-size: 16px;
 
+@mixin center-text {
+  text-align: center;
+}
+@mixin justify-text {
+  text-align: justify;
+}
+
+.about-us {
+  padding: $section-padding 0;
+  background-color: $section-bg-color;
+  .section-title {
+    font-size: $section-title-size;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include center-text;
+  }
+  .section-description {
+    font-size: $section-desc-size;
+    margin-bottom: 40px;
+    @include center-text;
+  }
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .member {
+      margin-bottom: 30px;
+      img {
+        width: $member-img-size;
+        height: $member-img-size;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+      .name {
+        font-size: $name-size;
+        font-weight: bold;
+        margin-top: 15px;
+        @include center-text;
+      }
+      .title {
+        font-size: $title-size;
+        color: $title-color;
+        margin-top: 10px;
+        @include center-text;
+      }
+      .description {
+        font-size: $desc-size;
+        margin-top: 15px;
+        @include justify-text;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .team-members {
+      .member {
+        width: 100%;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .team-members {
+      .member {
+        width: calc(50% - 15px);
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .team-members {
+      .member {
+        width: calc(33.33% - 20px);
+      }
+    }
+  }
+}
