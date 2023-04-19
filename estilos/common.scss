@@ -12,13 +12,12 @@ $small: 640px;
 $medium: 768px;
 $large: 1024px;
 $extra-large: 1280px;
-/* Body */
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: rem($paragraph-font-size);
   line-height: 1.5;
 }
-/* Mixins */
 @mixin border-radius($radius) {
   border-radius: $radius;
 }
@@ -28,7 +27,6 @@ body {
 @mixin box-shadow($x, $y, $blur, $spread, $color) {
   box-shadow: $x $y $blur $spread $color;
 }
-/* Extends */
 %button {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -50,8 +48,6 @@ body {
     transform: translateY(0.1rem);
   }
 }
-
-/* Classes */
 .btn {
     @extend %button; 
 }

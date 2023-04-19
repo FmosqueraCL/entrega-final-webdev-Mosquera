@@ -1,11 +1,8 @@
-/* Body */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: rem(1.2rem);
   line-height: 1.5; }
 
-/* Mixins */
-/* Extends */
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -25,7 +22,6 @@ body {
     box-shadow: 0 -0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
     transform: translateY(0.1rem); }
 
-/* Classes */
 .btn-primary {
   background-color: #000000; }
 
@@ -290,8 +286,7 @@ servicios.scss .servicios .col-lg-4 .bg-servicios {
         servicios.scss .servicios .col-lg-4 .bg-servicios ul li {
           padding: 2px 0; } }
 
-/* Styles */
-.container {
+.Cotiza {
   padding: 80px; }
 
 .row {
@@ -362,103 +357,105 @@ form {
   100% {
     opacity: 1; } }
 
-.about-us {
+.Nosotros {
   padding: 50px 0;
   background-color: #f0f0f0; }
-  .about-us .section-title {
+  .Nosotros .section-title {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center; }
-  .about-us .section-description {
+  .Nosotros .section-description {
     font-size: 18px;
     margin-bottom: 40px;
     text-align: center; }
-  .about-us .team-members {
+  .Nosotros .team-members {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    .about-us .team-members .member {
+    .Nosotros .team-members .member {
       margin-bottom: 30px; }
-      .about-us .team-members .member img {
+      .Nosotros .team-members .member img {
         width: 200px;
         height: 200px;
         margin: 0 auto;
         border-radius: 50%; }
-      .about-us .team-members .member .name {
+      .Nosotros .team-members .member .name {
         font-size: 24px;
         font-weight: bold;
         margin-top: 15px;
         text-align: center; }
-      .about-us .team-members .member .title {
+      .Nosotros .team-members .member .title {
         font-size: 18px;
         color: #777;
         margin-top: 10px;
         text-align: center; }
-      .about-us .team-members .member .description {
+      .Nosotros .team-members .member .description {
         font-size: 16px;
         margin-top: 15px;
         text-align: justify; }
   @media (max-width: 576px) {
-    .about-us .team-members .member {
+    .Nosotros .team-members .member {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 992px) {
-    .about-us .team-members .member {
+    .Nosotros .team-members .member {
       width: calc(50% - 15px); } }
   @media (min-width: 1200px) {
-    .about-us .team-members .member {
+    .Nosotros .team-members .member {
       width: calc(33.33% - 20px); } }
 
-.servicios .col-lg-4 .bg-servicios {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  margin-block: 30px 0; }
-  .servicios .col-lg-4 .bg-servicios .fa {
-    color: #000000; }
-  .servicios .col-lg-4 .bg-servicios h2 {
-    font-size: 2rem;
-    margin-block: 20px 0;
-    color: #000000; }
-    @media (max-inline-size: 768px) {
-      .servicios .col-lg-4 .bg-servicios h2 {
-        font-size: 1.5rem;
-        margin-block: 15px 0; } }
-    @media (max-inline-size: 640px) {
-      .servicios .col-lg-4 .bg-servicios h2 {
-        font-size: 1.5rem;
-        margin-block: 10px 0; } }
-  .servicios .col-lg-4 .bg-servicios p {
-    font-size: 1.2rem;
-    margin-block: 20px 0;
-    color: #363535; }
-    @media (max-inline-size: 768px) {
-      .servicios .col-lg-4 .bg-servicios p {
-        font-size: 1.2rem;
-        margin-block: 15px 0; } }
-    @media (max-inline-size: 640px) {
-      .servicios .col-lg-4 .bg-servicios p {
-        font-size: 1.2rem;
-        margin-block: 10px 0; } }
-  .servicios .col-lg-4 .bg-servicios ul {
-    font-size: 1.2rem; }
-    .servicios .col-lg-4 .bg-servicios ul li {
-      color: #363535;
-      padding: 5px 0; }
+.Tecnologias {
+  margin-top: 100px; }
+  .Tecnologias .col-lg-4 .bg-servicios {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-block: 30px 0; }
+    .Tecnologias .col-lg-4 .bg-servicios .fa {
+      color: #000000; }
+    .Tecnologias .col-lg-4 .bg-servicios h2 {
+      font-size: 2rem;
+      margin-block: 20px 0;
+      color: #000000; }
       @media (max-inline-size: 768px) {
-        .servicios .col-lg-4 .bg-servicios ul li {
-          padding: 3px 0; } }
+        .Tecnologias .col-lg-4 .bg-servicios h2 {
+          font-size: 1.5rem;
+          margin-block: 15px 0; } }
       @media (max-inline-size: 640px) {
-        .servicios .col-lg-4 .bg-servicios ul li {
-          padding: 2px 0; } }
-  @media (max-inline-size: 768px) {
-    .servicios .col-lg-4 .bg-servicios {
-      padding: 20px;
-      margin-block: 20px 0; } }
-  @media (max-inline-size: 640px) {
-    .servicios .col-lg-4 .bg-servicios {
-      padding: 15px;
-      margin-block: 20px 0; } }
+        .Tecnologias .col-lg-4 .bg-servicios h2 {
+          font-size: 1.5rem;
+          margin-block: 10px 0; } }
+    .Tecnologias .col-lg-4 .bg-servicios p {
+      font-size: 1.2rem;
+      margin-block: 20px 0;
+      color: #363535; }
+      @media (max-inline-size: 768px) {
+        .Tecnologias .col-lg-4 .bg-servicios p {
+          font-size: 1.2rem;
+          margin-block: 15px 0; } }
+      @media (max-inline-size: 640px) {
+        .Tecnologias .col-lg-4 .bg-servicios p {
+          font-size: 1.2rem;
+          margin-block: 10px 0; } }
+    .Tecnologias .col-lg-4 .bg-servicios ul {
+      font-size: 1.2rem; }
+      .Tecnologias .col-lg-4 .bg-servicios ul li {
+        color: #363535;
+        padding: 5px 0; }
+        @media (max-inline-size: 768px) {
+          .Tecnologias .col-lg-4 .bg-servicios ul li {
+            padding: 3px 0; } }
+        @media (max-inline-size: 640px) {
+          .Tecnologias .col-lg-4 .bg-servicios ul li {
+            padding: 2px 0; } }
+    @media (max-inline-size: 768px) {
+      .Tecnologias .col-lg-4 .bg-servicios {
+        padding: 20px;
+        margin-block: 20px 0; } }
+    @media (max-inline-size: 640px) {
+      .Tecnologias .col-lg-4 .bg-servicios {
+        padding: 15px;
+        margin-block: 20px 0; } }
 
 .news-section {
   max-width: 1200px;
