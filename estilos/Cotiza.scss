@@ -1,89 +1,59 @@
-
 .Cotiza {
-  padding: 80px;
-}
-.row {
-  margin: 20px 0;
-  &:first-child {
-    margin-block-start: 0;
-  }
-  &:last-child {
-    margin-block-end: 0;
-  }
-}
-.col-12 {
-  text-align: center;
-  h1, h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-block-end: 20px;
-    animation: fade-in 1s ease-in-out;
+  @extend %texto;
+  padding-top: 120px;
+  margin: 20px;
+  background-color: $color-parrafo;
+  color: $color-primario;
+  display: grid;
+  h1 {
+    @include desliza-desde-abajo(1s);
+    padding: 5px;
+    @include tamaño-fuente(2rem, 2rem, 2.5rem);
+    @include color($color-primario, $color-claro);
   }
   p {
-    font-size: $paragraph-font-size;
-    margin-block-end: 20px;
-    animation: slide-up 1s ease-in-out;
+    @include desliza-desde-abajo(1s);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    @include tamaño-fuente(1rem, 1.25rem, 1.5rem);
+    @include color($color-primario, $color-claro);
   }
-}
-.col-md-6 {
-    display: flex;
-  flex-direction: column;
-  animation: slide-left 1s ease-in-out;
   video {
-    inline-size: 100%;
-    block-size: auto;
-    margin-block-end: 20px;
-  }
-}
-form {
-  max-inline-size: 500px;
-  margin: 0 auto;
-  .form-control {
-    margin-block-end: 20px;
-    font-size: $paragraph-font-size;
-    &:focus {
-      box-shadow: none;
+    @include desliza-desde-abajo(1s);
+    background-color: black;
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px;
+    @include radio-borde(0.5rem);
+    @include sombra-caja(0, 0.5rem, 1rem, 0, rgba(0, 0, 0, 0.4));
+    @include desliza-desde-derecha(1s);
+    @media only screen and (max-width: $pequeño) {
+      max-width: 90%;
+    }
+    &:hover {
+      transform: scale(1.05);
     }
   }
-  textarea.form-control {
-    block-size: 100px;
+  form {
+  padding: 25px;
+    label {
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+    input {
+      @include radio-borde(0.25rem);
+      @include transicion(border-color, 0.3s, ease-in-out);
+      &:focus {
+        border-color: $color-secundario;
+        outline: none;
+      }
+    }
+    button {
+      @extend %button;
+      background-color: $color-secundario;
+      @include color($color-parrafo, $color-claro);
+    }
   }
-  label {
-    font-size: $paragraph-font-size;
-    font-weight: 500;
-    margin-block-end: 10px;
-  }
-@media (min-inline-size: 768px) {
-  .col-12 {
-    text-align: start;
-  }
-}
-@keyframes slide-up {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes slide-left {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 }

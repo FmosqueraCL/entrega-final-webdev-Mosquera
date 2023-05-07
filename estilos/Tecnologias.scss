@@ -1,62 +1,54 @@
-.Tecnologias {
+.tech-primario {
+  @extend %texto;
+  @include desliza-desde-abajo(1.5s);
+  background-color: $color-parrafo;
   margin-top: 100px;
-  .col-lg-4 {
-    .bg-servicios {
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      margin-block: 30px 0; 
-      .fa {
-        color: $primary-color;
-      }
-      h2 {
-        font-size: $heading-font-size;
-        margin-block: 20px 0; 
-        color: $primary-color;
-        @media (max-inline-size: $medium) {
-          font-size: $subheading-font-size;
-          margin-block: 15px 0; 
-        }
-        @media (max-inline-size: $small) {
-          font-size: $subheading-font-size;
-          margin-block: 10px 0; 
-        }
-      }
-      p {
-        font-size: $paragraph-font-size;
-        margin-block: 20px 0; 
-        color: $secondary-color;
-
-        @media (max-inline-size: $medium) {
-          font-size: $paragraph-font-size;
-          margin-block: 15px 0; 
-        }
-        @media (max-inline-size: $small) {
-          font-size: $paragraph-font-size;
-          margin-block: 10px 0; 
-        }
-      }
-      ul {
-        font-size: $list-item-font-size;
-        li {
-          color: $secondary-color;
-          padding: 5px 0;
-          @media (max-inline-size: $medium) {
-            padding: 3px 0;
-          }
-          @media (max-inline-size: $small) {
-            padding: 2px 0;
-          }
-        }
-      }
-      @media (max-inline-size: $medium) {
-        padding: 20px;
-        margin-block: 20px 0; 
-      }
-      @media (max-inline-size: $small) {
-        padding: 15px;
-        margin-block: 20px 0; 
-      }
+  p, h1 {
+    margin: 0;
+    padding: 0.5rem;
+  }
+}
+.tecnologias {
+    @extend %texto;
+    @include desliza-desde-izquierda(1.5s);
+    background-color: $color-parrafo;
+  .techs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 0px; 
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .tecnologia {
+    @include desliza-desde-abajo(2s);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tech-icon {
+    font-size: 5rem;
+    color: $color-secundario;
+    margin-bottom: 1rem;
+  }
+  .tech-title {
+    font-size: 2rem;
+    color: $color-primario;
+    margin-bottom: 1rem;
+  }
+  .tech-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: 1.5rem;
+      color: $color-parrafo;
+      margin-bottom: 0.5rem;
     }
   }
 }

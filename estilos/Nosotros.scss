@@ -1,85 +1,58 @@
-// Variables
-$section-padding: 50px;
-$section-bg-color: #f0f0f0;
-$section-title-size: 36px;
-$section-desc-size: 18px;
-$member-img-size: 200px;
-$name-size: 24px;
-$title-size: 18px;
-$title-color: #777;
-$desc-size: 16px;
-
-@mixin center-text {
-  text-align: center;
-}
-@mixin justify-text {
-  text-align: justify;
-}
-
 .Nosotros {
-  margin-top: 80px;
-  padding: $section-padding 0;
-  background-color: $section-bg-color;
-  .section-title {
-    font-size: $section-title-size;
-    font-weight: bold;
-    margin-bottom: 20px;
-    @include center-text;
-  }
-  .section-description {
-    font-size: $section-desc-size;
-    margin-bottom: 40px;
-    @include center-text;
-  }
-  .team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .member {
-      margin-bottom: 30px;
-      img {
-        width: $member-img-size;
-        height: $member-img-size;
-        margin: 0 auto;
-        border-radius: 50%;
-      }
-      .name {
-        font-size: $name-size;
-        font-weight: bold;
-        margin-top: 15px;
-        @include center-text;
-      }
-      .title {
-        font-size: $title-size;
-        color: $title-color;
-        margin-top: 10px;
-        @include center-text;
-      }
-      .description {
-        font-size: $desc-size;
-        margin-top: 15px;
-        @include justify-text;
-      }
-    }
-  }
-  @media (max-width: 576px) {
+  @extend %texto;
+  margin-top: 100px;
+  padding: 2rem;
+  background-color: $color-parrafo;
+  color: $color-primario;
+  .Equipo {
     .team-members {
-      .member {
-        width: 100%;
-      }
-    }
-  }
-  @media (min-width: 768px) and (max-width: 992px) {
-    .team-members {
-      .member {
-        width: calc(50% - 15px);
-      }
-    }
-  }
-  @media (min-width: 1200px) {
-    .team-members {
-      .member {
-        width: calc(33.33% - 20px);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+        "carlos francisco antonio"
+        "carlos francisco antonio";
+        @media (max-width: 768px) {
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      .miembro {
+        @include desliza-desde-abajo(1.3s);
+        border: 2px solid $color-primario;
+        img {
+          max-width: 70%;
+          max-height: 70%;
+          margin: auto;
+          @include radio-borde(0.5rem);
+          @include transicion(all, 0.5s, ease-in-out);
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        h2 {
+          @include tamaño-fuente(1.5rem, 2rem, 2.5rem);
+          @include color($color-claro, $color-primario);
+          margin-top: 0.5rem;
+          text-align: center;
+        }
+        p {
+          padding: 1rem;
+          @include tamaño-fuente(1rem, 1.25rem, 1.5rem);
+          @include color($color-claro, $color-primario);
+          margin-bottom: 0.5rem;
+          text-align: center;
+        }
+        &:nth-child(1) {
+          grid-area: carlos;
+        }
+        &:nth-child(2) {
+          grid-area: francisco;
+        }
+        &:nth-child(3) {
+          grid-area: antonio;
+        }
       }
     }
   }
